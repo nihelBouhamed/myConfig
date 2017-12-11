@@ -2,12 +2,10 @@ server:
   port: 8761
   
 eureka:
- instance:
-   prefer-ip-address: true
- client:
-   registerWithEureka: false
-   fetchRegistry: false
-   serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
- server:
-   waitTimeInMsWhenSyncEmpty: 0  
+  instance:
+   hostname: localhost
+client:
+  registerWithEureka: false
+  fetchRegistry: false
+  serviceUrl:
+  defaultZone: http://discovery-service:8761/eureka/
