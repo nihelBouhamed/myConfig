@@ -1,1 +1,8 @@
 me: nihel.bouhamed@gmail.com
+
+eureka:
+  client:
+  registerWithEureka: true
+  fetchRegistry: true
+  serviceUrl:
+    defaultZone: http://localhost:8080/eureka/
